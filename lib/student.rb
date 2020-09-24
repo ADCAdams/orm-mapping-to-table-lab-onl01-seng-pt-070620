@@ -13,7 +13,7 @@ class Student
   end
   
   def self.create_table
-    query = <<-SQL
+    SQL = <<-SQL
     SELECT * FROM food
     WHERE healthy = true
     SQL

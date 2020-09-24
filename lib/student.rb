@@ -13,7 +13,10 @@ class Student
   end
   
   def self.create_table
-    
+    query = <<-SQL
+    SELECT * FROM food
+    WHERE healthy = true
+    SQL
   end
   
   def self.drop_table
